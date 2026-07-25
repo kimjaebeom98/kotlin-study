@@ -1,0 +1,71 @@
+<div align="center">
+
+# 🅺 Kotlin Study
+
+**코틀린을 "언어 자체"로 깊이 파는 학습 기록**
+
+<img src="https://img.shields.io/badge/Kotlin-2.1-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin">
+<img src="https://img.shields.io/badge/JDK-21-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="JDK">
+<img src="https://img.shields.io/badge/docs-한국어-4c8eda?style=flat-square" alt="Korean">
+
+</div>
+
+---
+
+## 이 저장소는
+
+**코틀린이라는 언어를 제대로 이해하려고** 정리한 문서 모음이다.
+
+- 다루는 것 — 문법, 타입 시스템, 컬렉션, 객체지향, 코루틴처럼 **언어에 속한 것들**
+- 안 다루는 것 — Spring Boot 같은 **프레임워크나 애플리케이션 프로젝트 코드**
+- 실습은 IntelliJ Scratch File / 로컬 Gradle 프로젝트에서 하고, **이해한 결론만** 문서로 남긴다
+
+> [!NOTE]
+> "돌아가는 코드"보다 **왜 그렇게 되는지**가 목적이다.
+> 그래서 각 문서는 개념 설명에 그치지 않고, 직접 실행해서 확인한 결과와 헷갈렸던 지점을 함께 적는다.
+
+---
+
+## 📂 구성
+
+| 폴더 | 무엇을 담나 | 목차 |
+|---|---|---|
+| 📘 **[language/](language/)** | 코틀린 언어 기능 — 변수·타입, 문자열, 함수, 제어문, null safety, 컬렉션·함수형, 객체지향, 관용구, 제네릭, 코루틴 | [Level 0~10 커리큘럼](language/curriculum.md) |
+| 🧱 **[data-structure/](data-structure/)** | 자료구조를 코틀린으로 — List/Set/Map, 배열, 스택·큐·덱, 힙, 트리, 그래프 표현 | [목차](data-structure/) |
+| 🧮 **[algorithm/](algorithm/)** | 문제 풀이용 코틀린 — 입출력, 시간복잡도, 정렬·탐색, 재귀·DP 등 PS 패턴 | [목차](algorithm/) |
+
+각 폴더는 독립적으로 진행한다. 커리큘럼과 로드맵도 폴더별로 따로 둔다.
+
+---
+
+## 📖 문서 표기 규칙
+
+세 폴더의 문서는 같은 규칙을 쓴다.
+
+| 표시 | 뜻 |
+|:--:|---|
+| ⭐ | 실무에서 매일 쓰는 **핵심** |
+| ⚠️ | 자주 걸리는 **함정** |
+| 🔍 | 컴파일러가 실제로 어떻게 동작하는지 **확인한 내용** |
+
+---
+
+## 🧰 학습 환경
+
+| | |
+|---|---|
+| 언어 | Kotlin 2.1.20 |
+| JVM | JDK 21 (Gradle `jvmToolchain(21)`) |
+| 빌드 | Gradle Kotlin DSL |
+| IDE | IntelliJ IDEA (실험은 Scratch File `⌘⇧N`) |
+
+---
+
+## 🔗 참고
+
+| 링크 | 용도 |
+|---|---|
+| [Kotlin Docs](https://kotlinlang.org/docs/home.html) | 공식 레퍼런스 |
+| [Kotlin Playground](https://play.kotlinlang.org) | 브라우저에서 즉시 실행 |
+| [Kotlin Koans](https://play.kotlinlang.org/koans) | 개념 배운 뒤 복습용 문제 |
+| [API Reference](https://kotlinlang.org/api/core/kotlin-stdlib/) | 표준 라이브러리 |
