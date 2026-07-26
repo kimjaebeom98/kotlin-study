@@ -4,8 +4,8 @@
 
 **코틀린을 "언어 자체"로 깊이 파는 학습 기록**
 
-<img src="https://img.shields.io/badge/Kotlin-2.1-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin">
-<img src="https://img.shields.io/badge/JDK-21-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="JDK">
+<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin">
+<img src="https://img.shields.io/badge/JDK-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="JDK">
 <img src="https://img.shields.io/badge/docs-한국어-4c8eda?style=flat-square" alt="Korean">
 
 </div>
@@ -13,12 +13,6 @@
 ---
 
 ## 이 저장소는
-
-**코틀린이라는 언어를 제대로 이해하려고** 정리한 문서 모음이다.
-
-- 다루는 것 — 문법, 타입 시스템, 컬렉션, 객체지향, 코루틴처럼 **언어에 속한 것들**
-- 안 다루는 것 — Spring Boot 같은 **프레임워크나 애플리케이션 프로젝트 코드**
-- 실습은 IntelliJ Scratch File / 로컬 Gradle 프로젝트에서 하고, **이해한 결론만** 문서로 남긴다
 
 > [!NOTE]
 > "돌아가는 코드"보다 **왜 그렇게 되는지**가 목적이다.
@@ -35,29 +29,6 @@
 | 🧮 **[algorithm/](algorithm/)** | PS 문제 풀이 기록 — 문제 원문, 해설, 답안 코드. 반복해 쓰는 알고리즘·공식은 개념 문서로 정리 | [풀이 목록](algorithm/) |
 
 각 폴더는 독립적으로 진행한다. 커리큘럼과 로드맵도 폴더별로 따로 둔다.
-
----
-
-## 📖 문서 표기 규칙
-
-세 폴더의 문서는 같은 규칙을 쓴다.
-
-| 표시 | 뜻 |
-|:--:|---|
-| ⭐ | 실무에서 매일 쓰는 **핵심** |
-| ⚠️ | 자주 걸리는 **함정** |
-| 🔍 | 컴파일러가 실제로 어떻게 동작하는지 **확인한 내용** |
-
----
-
-## 🧰 학습 환경
-
-| | |
-|---|---|
-| 언어 | Kotlin 2.1.20 |
-| JVM | JDK 21 (Gradle `jvmToolchain(21)`) |
-| 빌드 | Gradle Kotlin DSL |
-| IDE | IntelliJ IDEA (실험은 Scratch File `⌘⇧N`) |
 
 ---
 
