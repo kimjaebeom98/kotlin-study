@@ -32,7 +32,7 @@
 |---|---|---|
 | 📘 **[language/](language/)** | 코틀린 언어 기능 — 변수·타입, 문자열, 함수, 제어문, null safety, 컬렉션·함수형, 객체지향, 관용구, 제네릭, 코루틴 | [Level 0~10 커리큘럼](language/curriculum.md) |
 | 🧱 **[data-structure/](data-structure/)** | 자료구조를 코틀린으로 — List/Set/Map, 배열, 스택·큐·덱, 힙, 트리, 그래프 표현 | [목차](data-structure/) |
-| 🧮 **[algorithm/](algorithm/)** | 문제 풀이용 코틀린 — 입출력, 시간복잡도, 정렬·탐색, 재귀·DP 등 PS 패턴 | [목차](algorithm/) |
+| 🧮 **[algorithm/](algorithm/)** | PS 문제 풀이 기록 — 문제 원문, 해설, 답안 코드. 반복해 쓰는 알고리즘·공식은 개념 문서로 정리 | [풀이 목록](algorithm/) |
 
 각 폴더는 독립적으로 진행한다. 커리큘럼과 로드맵도 폴더별로 따로 둔다.
 
