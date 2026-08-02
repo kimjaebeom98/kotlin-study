@@ -25,7 +25,7 @@
 | 폴더 | 무엇을 담나 | 목차 |
 |---|---|---|
 | 📘 **[language/](language/)** | 코틀린 언어 기능 — 변수·타입, 문자열, 함수, 제어문, null safety, 컬렉션·함수형, 객체지향, 관용구, 제네릭, 코루틴 | [Level 0~10 커리큘럼](language/curriculum.md) |
-| 🧱 **[data-structure/](data-structure/)** | 자료구조를 코틀린으로 — List/Set/Map, 배열, 스택·큐·덱, 힙, 트리, 그래프 표현 | [목차](data-structure/) |
+| 🧱 **[data-structure/](data-structure/)** | 자료구조를 코틀린으로 직접 구현 — 배열, 문자열, 연결 리스트, 스택·큐·덱, 해시테이블, 트리, 힙, 트라이, 세그먼트 트리·펜윅 트리, 그래프 | [Level 0~4 커리큘럼](data-structure/CURRICULUM.md) |
 | 🧮 **[algorithm/](algorithm/)** | PS 문제 풀이 기록 — 문제 원문, 해설, 답안 코드. 반복해 쓰는 알고리즘·공식은 개념 문서로 정리 | [풀이 목록](algorithm/) |
 
 각 폴더는 독립적으로 진행한다. 커리큘럼과 로드맵도 폴더별로 따로 둔다.
