@@ -1,0 +1,48 @@
+<svg width="800" height="420" viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" font-family="'Apple SD Gothic Neo','Malgun Gothic',ui-sans-serif,sans-serif">
+  <rect width="800" height="420" fill="#ffffff"/>
+
+  <text x="400" y="25" font-size="18" font-weight="700" fill="#24292f" text-anchor="middle">입력 크기(n)에 따른 연산 횟수 비교</text>
+
+  <!-- axes -->
+  <line x1="60" y1="340" x2="750" y2="340" stroke="#24292f" stroke-width="1.5"/>
+  <line x1="60" y1="340" x2="60" y2="35" stroke="#24292f" stroke-width="1.5"/>
+  <text x="750" y="362" font-size="13" fill="#57606a" text-anchor="end">n (입력 크기, 1~20)</text>
+  <text x="30" y="60" font-size="13" fill="#57606a" text-anchor="start">연산 횟수</text>
+
+  <!-- O(1) -->
+  <line x1="94" y1="339" x2="740" y2="339" stroke="#8c959f" stroke-width="2.5"/>
+
+  <!-- O(log n) -->
+  <polyline points="94,340 128,339.3 196,338.5 264,338.1 332,337.8 400,337.5 468,337.3 536,337.1 604,337 672,336.9 740,336.8"
+            fill="none" stroke="#1a7f37" stroke-width="2.5"/>
+
+  <!-- O(n) -->
+  <polyline points="94,339.3 128,338.5 196,337 264,335.5 332,334 400,332.5 468,331 536,329.5 604,328 672,326.5 740,325"
+            fill="none" stroke="#0969da" stroke-width="2.5"/>
+
+  <!-- O(n log n) -->
+  <polyline points="94,340 128,338.5 196,334 264,328.4 332,322 400,315.1 468,307.8 536,300 604,292 672,283.7 740,275.2"
+            fill="none" stroke="#8250df" stroke-width="2.5"/>
+
+  <!-- O(n^2) -->
+  <polyline points="94,339.3 128,337 196,328 264,313 332,292 400,265 468,232 536,193 604,148 672,97 740,40"
+            fill="none" stroke="#cf222e" stroke-width="2.5"/>
+
+  <!-- legend -->
+  <g font-size="14">
+    <line x1="90" y1="55" x2="120" y2="55" stroke="#8c959f" stroke-width="3"/>
+    <text x="128" y="59" fill="#24292f">O(1)</text>
+
+    <line x1="90" y1="77" x2="120" y2="77" stroke="#1a7f37" stroke-width="3"/>
+    <text x="128" y="81" fill="#24292f">O(log n)</text>
+
+    <line x1="90" y1="99" x2="120" y2="99" stroke="#0969da" stroke-width="3"/>
+    <text x="128" y="103" fill="#24292f">O(n)</text>
+
+    <line x1="90" y1="121" x2="120" y2="121" stroke="#8250df" stroke-width="3"/>
+    <text x="128" y="125" fill="#24292f">O(n log n)</text>
+
+    <line x1="90" y1="143" x2="120" y2="143" stroke="#cf222e" stroke-width="3"/>
+    <text x="128" y="147" fill="#24292f">O(n²)</text>
+  </g>
+</svg>
