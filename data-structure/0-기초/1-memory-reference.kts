@@ -1,5 +1,5 @@
 // 0.1 메모리와 참조
-// 실행: kotlin data-structure/0-basics/1-memory-reference.kts
+// 실행: kotlin data-structure/0-기초/1-memory-reference.kts
 
 // TODO: 값(value) vs 참조(reference) — 코틀린은 객체를 항상 참조로 다룬다는 걸 확인할 예제 작성
 // TODO: 스택 메모리 vs 힙 메모리 — 지역 변수와 객체 인스턴스가 어디에 생기는지 주석으로 정리
