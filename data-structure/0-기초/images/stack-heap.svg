@@ -1,0 +1,49 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" font-family="'Apple SD Gothic Neo','Malgun Gothic',ui-sans-serif,sans-serif">
+  <rect width="800" height="400" fill="#ffffff"/>
+
+  <text x="210" y="34" font-size="20" font-weight="700" fill="#24292f" text-anchor="middle">스택 (Stack)</text>
+  <text x="610" y="34" font-size="20" font-weight="700" fill="#24292f" text-anchor="middle">힙 (Heap)</text>
+
+  <line x1="420" y1="10" x2="420" y2="340" stroke="#d0d7de" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- row1: x = 1 (primitive) -->
+  <rect x="80" y="55" width="260" height="50" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="210" y="86" font-size="18" text-anchor="middle" fill="#116329" font-family="monospace">x = 1</text>
+
+  <!-- row2: a = 0x1 (reference) -->
+  <rect x="80" y="120" width="260" height="50" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="210" y="151" font-size="18" text-anchor="middle" fill="#0550ae" font-family="monospace">a = 0x1</text>
+
+  <!-- row3: b = 0x1 (reference) -->
+  <rect x="80" y="185" width="260" height="50" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="210" y="216" font-size="18" text-anchor="middle" fill="#0550ae" font-family="monospace">b = 0x1</text>
+
+  <!-- row4: c = null -->
+  <rect x="80" y="250" width="260" height="50" rx="8" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="210" y="281" font-size="18" text-anchor="middle" fill="#57606a" font-family="monospace">c = null</text>
+  <text x="210" y="318" font-size="13" text-anchor="middle" fill="#57606a">가리키는 주소가 없음</text>
+
+  <!-- heap object -->
+  <rect x="500" y="150" width="260" height="70" rx="8" fill="#fff1e5" stroke="#9a6700" stroke-width="1.5"/>
+  <text x="630" y="178" font-size="16" text-anchor="middle" fill="#7d4e00" font-family="monospace">0x1</text>
+  <text x="630" y="202" font-size="16" text-anchor="middle" fill="#7d4e00" font-family="monospace">Box(value = 1)</text>
+  <text x="630" y="245" font-size="13" text-anchor="middle" fill="#57606a">a, b가 같은 주소를 가리키므로 객체를 공유</text>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0969da"/>
+    </marker>
+  </defs>
+  <path d="M340,145 C 400,140 440,160 500,172" fill="none" stroke="#0969da" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M340,210 C 400,210 440,195 500,192" fill="none" stroke="#0969da" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- legend -->
+  <rect x="60" y="360" width="16" height="16" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="82" y="372" font-size="13" fill="#24292f">원시값 — 스택에 값 자체</text>
+
+  <rect x="330" y="360" width="16" height="16" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="352" y="372" font-size="13" fill="#24292f">참조 — 스택엔 주소만, 실제 데이터는 힙</text>
+
+  <rect x="640" y="360" width="16" height="16" fill="#f6f8fa" stroke="#8c959f" stroke-dasharray="3 2"/>
+  <text x="662" y="372" font-size="13" fill="#24292f">null — 주소 없음</text>
+</svg>
