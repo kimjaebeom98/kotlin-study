@@ -8,6 +8,17 @@
 
 > 표기 규칙(⭐ ⚠️ 🔍)과 문서 흐름은 [루트 README](../README.md#-문서-표기-규칙) 참고.
 
+## 실습 환경
+
+Gradle 프로젝트 없이 `.kts`(Kotlin 스크립트) 파일로 실습한다. 파일 하나로 바로 실행되고 빌드 산출물이 남지 않는다.
+
+```
+sdk install kotlin          # 최초 1회
+kotlin 파일경로.kts          # 실행
+```
+
+폴더는 커리큘럼 번호를 그대로 따른다: `0-basics/`, `1-linear/`, `2-hash/`, `3-nonlinear/`, `4-applications/`. 각 폴더 안 파일은 하위 항목 번호로 정리한다 (예: `1-linear/2-string.kts` = 1.2 문자열).
+
 ## 분류
 
 ```mermaid
