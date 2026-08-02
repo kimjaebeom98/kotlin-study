@@ -28,7 +28,7 @@ flowchart LR
     nonlinear --> heap["힙"]
     nonlinear --> trie["트라이"]
     nonlinear --> seg["세그먼트 트리 · 펜윅 트리"]
-    nonlinear --> graph["그래프"]
+    nonlinear --> gph["그래프"]
 ```
 
 ## 학습 순서
