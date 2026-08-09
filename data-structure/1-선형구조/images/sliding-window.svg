@@ -1,0 +1,51 @@
+<svg width="700" height="260" viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" font-family="'Apple SD Gothic Neo','Malgun Gothic',ui-sans-serif,sans-serif">
+  <rect width="700" height="260" fill="#ffffff"/>
+
+  <text x="350" y="25" font-size="17" font-weight="700" fill="#24292f" text-anchor="middle">최장 무반복 부분 문자열 — 슬라이딩 윈도우 ("abcabcbb")</text>
+
+  <!-- boxes -->
+  <g font-family="monospace" font-size="24" text-anchor="middle">
+    <rect x="60" y="100" width="60" height="60" rx="6" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+    <text x="90" y="138" fill="#24292f">a</text>
+
+    <rect x="130" y="100" width="60" height="60" rx="6" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+    <text x="160" y="138" fill="#24292f">b</text>
+
+    <rect x="200" y="100" width="60" height="60" rx="6" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+    <text x="230" y="138" fill="#24292f">c</text>
+
+    <rect x="270" y="100" width="60" height="60" rx="6" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+    <text x="300" y="138" fill="#24292f">a</text>
+
+    <rect x="340" y="100" width="60" height="60" rx="6" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+    <text x="370" y="138" fill="#24292f">b</text>
+
+    <rect x="410" y="100" width="60" height="60" rx="6" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+    <text x="440" y="138" fill="#24292f">c</text>
+
+    <rect x="480" y="100" width="60" height="60" rx="6" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+    <text x="510" y="138" fill="#24292f">b</text>
+
+    <rect x="550" y="100" width="60" height="60" rx="6" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+    <text x="580" y="138" fill="#24292f">b</text>
+  </g>
+
+  <!-- sliding window overlay: left edge = left pointer, right edge = right pointer -->
+  <rect y="92" height="76" rx="8" fill="#1a7f37" fill-opacity="0.18" stroke="#1a7f37" stroke-width="2.5"
+        x="60" width="60">
+    <animate attributeName="x" dur="9s" begin="0s" repeatCount="indefinite"
+      keyTimes="0;0.0556;0.1;0.1556;0.2;0.2778;0.3222;0.3778;0.4222;0.4778;0.5222;0.5778;0.6222;0.6778;0.7222;0.8333;0.8889;1"
+      values="60;60;60;60;60;60;130;130;200;200;270;270;410;410;550;550;60;60"/>
+    <animate attributeName="width" dur="9s" begin="0s" repeatCount="indefinite"
+      keyTimes="0;0.0556;0.1;0.1556;0.2;0.2778;0.3222;0.3778;0.4222;0.4778;0.5222;0.5778;0.6222;0.6778;0.7222;0.8333;0.8889;1"
+      values="60;60;130;130;200;200;200;200;200;200;200;200;130;130;60;60;60;60"/>
+  </rect>
+
+  <!-- max length badge -->
+  <text x="350" y="215" font-size="18" font-weight="700" fill="#116329" text-anchor="middle" opacity="1">
+    최대 길이: 3 ("abc")
+    <animate attributeName="opacity" values="0;0;1;1;0;0"
+      keyTimes="0;0.1556;0.2;0.8333;0.8889;1"
+      dur="9s" begin="0s" repeatCount="indefinite"/>
+  </text>
+</svg>
