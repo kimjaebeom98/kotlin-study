@@ -11,18 +11,18 @@
   <g opacity="1">
     <animateTransform attributeName="transform" type="translate"
       values="0,30;0,30;0,0;0,0;0,-30;0,-30"
-      keyTimes="0;0.0222;0.0556;0.8;0.8333;1"
-      dur="9s" begin="0s" repeatCount="indefinite"/>
+      keyTimes="0.0;0.064;0.08;0.904;0.92;1.0"
+      dur="25s" begin="0s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;0;1;1;0;0"
-      keyTimes="0;0.0222;0.0556;0.8;0.8333;1"
-      dur="9s" begin="0s" repeatCount="indefinite"/>
+      keyTimes="0.0;0.064;0.08;0.904;0.92;1.0"
+      dur="25s" begin="0s" repeatCount="indefinite"/>
     <rect x="170" y="300" width="380" height="45" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
     <text x="190" y="328" font-size="16" fill="#0550ae" font-family="monospace">factorial(4)</text>
     <text x="530" y="328" font-size="16" font-weight="700" fill="#0550ae" text-anchor="end" opacity="0">
       = 24
       <animate attributeName="opacity" values="0;0;1;1;0;0"
-        keyTimes="0;0.7278;0.7444;0.8;0.8333;1"
-        dur="9s" begin="0s" repeatCount="indefinite"/>
+        keyTimes="0.0;0.808;0.82;0.904;0.92;1.0"
+        dur="25s" begin="0s" repeatCount="indefinite"/>
     </text>
   </g>
 
@@ -30,18 +30,18 @@
   <g opacity="1">
     <animateTransform attributeName="transform" type="translate"
       values="0,30;0,30;0,0;0,0;0,-30;0,-30"
-      keyTimes="0;0.1333;0.1667;0.7111;0.7444;1"
-      dur="9s" begin="0s" repeatCount="indefinite"/>
+      keyTimes="0.0;0.184;0.2;0.804;0.82;1.0"
+      dur="25s" begin="0s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;0;1;1;0;0"
-      keyTimes="0;0.1333;0.1667;0.7111;0.7444;1"
-      dur="9s" begin="0s" repeatCount="indefinite"/>
+      keyTimes="0.0;0.184;0.2;0.804;0.82;1.0"
+      dur="25s" begin="0s" repeatCount="indefinite"/>
     <rect x="170" y="245" width="380" height="45" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
     <text x="190" y="273" font-size="16" fill="#0550ae" font-family="monospace">factorial(3)</text>
     <text x="530" y="273" font-size="16" font-weight="700" fill="#0550ae" text-anchor="end" opacity="0">
       = 6
       <animate attributeName="opacity" values="0;0;1;1;0;0"
-        keyTimes="0;0.6389;0.6556;0.7111;0.7444;1"
-        dur="9s" begin="0s" repeatCount="indefinite"/>
+        keyTimes="0.0;0.708;0.72;0.804;0.82;1.0"
+        dur="25s" begin="0s" repeatCount="indefinite"/>
     </text>
   </g>
 
@@ -49,18 +49,18 @@
   <g opacity="1">
     <animateTransform attributeName="transform" type="translate"
       values="0,30;0,30;0,0;0,0;0,-30;0,-30"
-      keyTimes="0;0.2444;0.2778;0.6222;0.6556;1"
-      dur="9s" begin="0s" repeatCount="indefinite"/>
+      keyTimes="0.0;0.304;0.32;0.704;0.72;1.0"
+      dur="25s" begin="0s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;0;1;1;0;0"
-      keyTimes="0;0.2444;0.2778;0.6222;0.6556;1"
-      dur="9s" begin="0s" repeatCount="indefinite"/>
+      keyTimes="0.0;0.304;0.32;0.704;0.72;1.0"
+      dur="25s" begin="0s" repeatCount="indefinite"/>
     <rect x="170" y="190" width="380" height="45" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
     <text x="190" y="218" font-size="16" fill="#0550ae" font-family="monospace">factorial(2)</text>
     <text x="530" y="218" font-size="16" font-weight="700" fill="#0550ae" text-anchor="end" opacity="0">
       = 2
       <animate attributeName="opacity" values="0;0;1;1;0;0"
-        keyTimes="0;0.55;0.5667;0.6222;0.6556;1"
-        dur="9s" begin="0s" repeatCount="indefinite"/>
+        keyTimes="0.0;0.608;0.62;0.704;0.72;1.0"
+        dur="25s" begin="0s" repeatCount="indefinite"/>
     </text>
   </g>
 
@@ -68,18 +68,18 @@
   <g opacity="1">
     <animateTransform attributeName="transform" type="translate"
       values="0,30;0,30;0,0;0,0;0,-30;0,-30"
-      keyTimes="0;0.3556;0.3889;0.5333;0.5667;1"
-      dur="9s" begin="0s" repeatCount="indefinite"/>
+      keyTimes="0.0;0.424;0.44;0.604;0.62;1.0"
+      dur="25s" begin="0s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;0;1;1;0;0"
-      keyTimes="0;0.3556;0.3889;0.5333;0.5667;1"
-      dur="9s" begin="0s" repeatCount="indefinite"/>
+      keyTimes="0.0;0.424;0.44;0.604;0.62;1.0"
+      dur="25s" begin="0s" repeatCount="indefinite"/>
     <rect x="170" y="135" width="380" height="45" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
     <text x="190" y="163" font-size="16" fill="#116329" font-family="monospace">factorial(1) — 종료 조건</text>
     <text x="530" y="163" font-size="16" font-weight="700" fill="#116329" text-anchor="end" opacity="0">
       = 1
       <animate attributeName="opacity" values="0;0;1;1;0;0"
-        keyTimes="0;0.4611;0.4778;0.5333;0.5667;1"
-        dur="9s" begin="0s" repeatCount="indefinite"/>
+        keyTimes="0.0;0.508;0.52;0.604;0.62;1.0"
+        dur="25s" begin="0s" repeatCount="indefinite"/>
     </text>
   </g>
 
