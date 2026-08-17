@@ -1,0 +1,109 @@
+<svg width="600" height="230" viewBox="0 0 600 230" xmlns="http://www.w3.org/2000/svg" font-family="'Apple SD Gothic Neo','Malgun Gothic',ui-sans-serif,sans-serif">
+  <rect width="600" height="230" fill="#ffffff"/>
+
+  <text x="300" y="22" font-size="17" font-weight="700" fill="#24292f" text-anchor="middle">선택 정렬 — 최솟값 찾은 뒤 한 번만 스왑</text>
+
+  <!-- legend -->
+  <rect x="110" y="38" width="14" height="14" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="128" y="49" font-size="12" fill="#24292f">미확정</text>
+  <rect x="210" y="38" width="14" height="14" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="228" y="49" font-size="12" fill="#24292f">최솟값 발견</text>
+  <rect x="340" y="38" width="14" height="14" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="358" y="49" font-size="12" fill="#24292f">확정(정렬됨)</text>
+
+  <!-- S0: [5,2,4,1] -->
+  <g opacity="1">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0.0;0.1364;0.15;1.0" dur="22s" begin="0s" repeatCount="indefinite"/>
+    <g font-family="monospace" font-size="26" text-anchor="middle">
+      <rect x="110" y="90" width="70" height="70" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+      <text x="145" y="133" fill="#0550ae">5</text>
+      <rect x="190" y="90" width="70" height="70" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+      <text x="225" y="133" fill="#0550ae">2</text>
+      <rect x="270" y="90" width="70" height="70" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+      <text x="305" y="133" fill="#0550ae">4</text>
+      <rect x="350" y="90" width="70" height="70" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+      <text x="385" y="133" fill="#0550ae">1</text>
+    </g>
+    <text x="300" y="195" font-size="15" fill="#24292f" text-anchor="middle">시작: [5, 2, 4, 1]</text>
+  </g>
+
+  <!-- S1: i=0, found min=1 at index3 -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0;0.1364;0.15;0.2864;0.3;1.0" dur="22s" begin="0s" repeatCount="indefinite"/>
+    <g font-family="monospace" font-size="26" text-anchor="middle">
+      <rect x="110" y="90" width="70" height="70" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+      <text x="145" y="133" fill="#0550ae">5</text>
+      <rect x="190" y="90" width="70" height="70" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+      <text x="225" y="133" fill="#0550ae">2</text>
+      <rect x="270" y="90" width="70" height="70" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+      <text x="305" y="133" fill="#0550ae">4</text>
+      <rect x="350" y="90" width="70" height="70" rx="8" fill="#fff8c5" stroke="#9a6700" stroke-width="1.5"/>
+      <text x="385" y="133" fill="#7d4e00">1</text>
+    </g>
+    <text x="300" y="195" font-size="15" fill="#24292f" text-anchor="middle">i=0 — 최솟값 찾기: 1(인덱스 3)</text>
+  </g>
+
+  <!-- S2: i=0, swap(0,3) -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0;0.2864;0.3;0.4364;0.45;1.0" dur="22s" begin="0s" repeatCount="indefinite"/>
+    <g font-family="monospace" font-size="26" text-anchor="middle">
+      <rect x="110" y="90" width="70" height="70" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+      <text x="145" y="133" fill="#116329">1</text>
+      <rect x="190" y="90" width="70" height="70" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+      <text x="225" y="133" fill="#0550ae">2</text>
+      <rect x="270" y="90" width="70" height="70" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+      <text x="305" y="133" fill="#0550ae">4</text>
+      <rect x="350" y="90" width="70" height="70" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+      <text x="385" y="133" fill="#0550ae">5</text>
+    </g>
+    <text x="300" y="195" font-size="15" fill="#24292f" text-anchor="middle">i=0 — swap(0, 3) → 1 확정</text>
+  </g>
+
+  <!-- S3: i=1, min=2 already in place -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0;0.4364;0.45;0.5864;0.6;1.0" dur="22s" begin="0s" repeatCount="indefinite"/>
+    <g font-family="monospace" font-size="26" text-anchor="middle">
+      <rect x="110" y="90" width="70" height="70" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+      <text x="145" y="133" fill="#116329">1</text>
+      <rect x="190" y="90" width="70" height="70" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+      <text x="225" y="133" fill="#116329">2</text>
+      <rect x="270" y="90" width="70" height="70" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+      <text x="305" y="133" fill="#0550ae">4</text>
+      <rect x="350" y="90" width="70" height="70" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+      <text x="385" y="133" fill="#0550ae">5</text>
+    </g>
+    <text x="300" y="195" font-size="15" fill="#24292f" text-anchor="middle">i=1 — 최솟값 2(인덱스 1), 이미 제자리 → 2 확정</text>
+  </g>
+
+  <!-- S4: i=2, min=4 already in place -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0;0.5864;0.6;0.7364;0.75;1.0" dur="22s" begin="0s" repeatCount="indefinite"/>
+    <g font-family="monospace" font-size="26" text-anchor="middle">
+      <rect x="110" y="90" width="70" height="70" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+      <text x="145" y="133" fill="#116329">1</text>
+      <rect x="190" y="90" width="70" height="70" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+      <text x="225" y="133" fill="#116329">2</text>
+      <rect x="270" y="90" width="70" height="70" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+      <text x="305" y="133" fill="#116329">4</text>
+      <rect x="350" y="90" width="70" height="70" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+      <text x="385" y="133" fill="#0550ae">5</text>
+    </g>
+    <text x="300" y="195" font-size="15" fill="#24292f" text-anchor="middle">i=2 — 최솟값 4(인덱스 2), 이미 제자리 → 4 확정</text>
+  </g>
+
+  <!-- S5: done -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0.0;0.7364;0.75;0.8864;0.9;1.0" dur="22s" begin="0s" repeatCount="indefinite"/>
+    <g font-family="monospace" font-size="26" text-anchor="middle">
+      <rect x="110" y="90" width="70" height="70" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+      <text x="145" y="133" fill="#116329">1</text>
+      <rect x="190" y="90" width="70" height="70" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+      <text x="225" y="133" fill="#116329">2</text>
+      <rect x="270" y="90" width="70" height="70" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+      <text x="305" y="133" fill="#116329">4</text>
+      <rect x="350" y="90" width="70" height="70" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+      <text x="385" y="133" fill="#116329">5</text>
+    </g>
+    <text x="300" y="195" font-size="15" font-weight="700" fill="#116329" text-anchor="middle">정렬 끝: [1, 2, 4, 5]</text>
+  </g>
+</svg>
