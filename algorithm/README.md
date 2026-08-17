@@ -29,3 +29,4 @@ programmers/level1/두 정수 사이의 합/
 |---|---|
 | [등차수열](concepts/arithmetic-sequence.md) | 일반항 · 항의 개수 · 합 공식 O(1), `step` / `IntProgression`, 오버플로우 함정 |
 | [유클리드 호제법](concepts/euclidean-algorithm.md) | 최대공약수 O(log n), 증명, 최소공배수 오버플로우 함정 |
+| [버블 정렬](concepts/sorting/bubble-sort.md) | 인접 비교 + 스왑, O(n²), 안정 정렬 |
